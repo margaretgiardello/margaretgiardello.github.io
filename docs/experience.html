@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>experience.knit</title>
+
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Margaret Giardello</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="experience.html">Experience</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="experience" class="section level1">
+<h1><u>Experience</u></h1>
+<p><br></p>
+<div id="research-assistant-lewis-clark-college" class="section level3">
+<h3>Research Assistant — Lewis &amp; Clark College</h3>
+<p><strong>Portland, OR | Sept 2024 – Sept 2025</strong></p>
+<p>Promoted from the Rogers Fellowship program to continue research
+design and execution. Took leadership of new research aides — creating
+reference documentation, becoming the primary point of contact for
+questions, overseeing design implementation, and compiling team
+results.</p>
+<ul>
+<li>Recruited participants and conducted 100+ experimental procedure
+sessions</li>
+<li>Independently built a data collection, organization, and storage
+system using Qualtrics and connected Google platforms, ensuring zero
+data loss</li>
+<li>Sole research assistant on data cleaning and analysis (Google
+Sheets, Excel, SPSS, R) to prepare findings for academic and
+emergency-preparedness conferences</li>
+<li>Represented the project at OMSI After Dark, guiding 500+ attendees
+through a simplified version of the study protocol (<a
+href="https://www.cascadia9game.org/">cascadia9game.org</a>)</li>
+</ul>
+<p><br></p>
+</div>
+<div id="data-analyst-growing-gardens-lewis-clark-college"
+class="section level3">
+<h3>Data Analyst — Growing Gardens, Lewis &amp; Clark College</h3>
+<p><strong>Portland, OR | Jan – May 2025</strong></p>
+<p>Worked in a small team on analysis tied to Growing Gardens’ school
+program, a local Portland nonprofit serving 10 schools in food-security
+events.</p>
+<ul>
+<li>Used R for data cleaning, aggregation, analysis, and
+visualization</li>
+<li>Developed survey materials in Google Forms with formal documentation
+of organization and storage</li>
+<li>Produced a report of preliminary results and recommendations to
+lessen data collection burden on volunteer teachers while preserving
+future data validity</li>
+<li>Work featured in an OPB radio segment and article, extending the
+project’s visibility beyond the college</li>
+</ul>
+<p><br></p>
+</div>
+<div id="student-data-science-assistant-lewis-clark-college"
+class="section level3">
+<h3>Student Data Science Assistant — Lewis &amp; Clark College</h3>
+<p><strong>Portland, OR | Sept 2024 – May 2025</strong></p>
+<ul>
+<li>Supported 30+ students per term as TA for introductory data science
+courses, resolving in-lecture technical issues and grading
+assignments</li>
+<li>Staffed the campus “Data Cafe” as an R and data-sourcing
+specialist</li>
+<li>Improved student outcomes through office hours, 1:1 tutoring, and
+cross-department faculty referrals</li>
+</ul>
+<p><br></p>
+</div>
+<div id="rogers-fellowship-research-lewis-clark-college"
+class="section level3">
+<h3>Rogers Fellowship Research — Lewis &amp; Clark College</h3>
+<p><strong>Portland, OR | May – Aug 2024</strong></p>
+<ul>
+<li>Designed and executed Phase III of an NSF-funded (#1917148)
+interdisciplinary study on video games for adolescent disaster
+preparedness</li>
+<li>Conducted a literature review and formal experimental proposal
+building directly on prior study limitations</li>
+<li>Personally recovered and re-analyzed a backlog of unused
+footage/data by building a new annotation and storage system, salvaging
+results from 100+ experimental sessions</li>
+<li>Coordinated with participant pools, fellow research aides, and PIs
+to refine game materials for testing</li>
+<li>Conducted statistical analysis across experiments (Google Sheets,
+Excel, SPSS,
+<ol start="18" style="list-style-type: upper-alpha">
+<li>to guide future experiment design</li>
+</ol></li>
+<li>Documented and presented research in a formal paper and academic
+presentation</li>
+</ul>
+<p><br></p>
+</div>
+<div id="data-analyst-us-fish-wildlife-service-lewis-clark-college"
+class="section level3">
+<h3>Data Analyst — US Fish &amp; Wildlife Service, Lewis &amp; Clark
+College</h3>
+<p><strong>Portland, OR | Jan – May 2024</strong></p>
+<ul>
+<li>Built a species distribution assessment predicting future habitable
+range for the fisher (<em>Pekania pennanti</em>) under shifting climate
+conditions</li>
+<li>Used R and GitHub for a full data pipeline: cleaning, aggregation,
+analysis, and visualization</li>
+<li>Produced a paper and presentation for conservation stakeholders at
+the US Fish &amp; Wildlife Service (<a
+href="https://zenodo.org/records/11051172">zenodo.org/records/11051172</a>)</li>
+</ul>
+<hr />
+<p><br><br></p>
+</div>
+<div id="education" class="section level2">
+<h2><u>Education</u></h2>
+<p><br></p>
+<div id="master-of-science-data-science" class="section level3">
+<h3>Master of Science, Data Science</h3>
+<p><strong>Willamette University | Portland, OR</strong> August 2026 —
+GPA: 4.0</p>
+<p><br></p>
+</div>
+<div id="bachelor-of-arts-psychology" class="section level3">
+<h3>Bachelor of Arts, Psychology</h3>
+<div id="minor-data-science" class="section level4">
+<h4>Minor: Data Science</h4>
+<p><strong>Lewis &amp; Clark College | Portland, OR</strong> May 2025 —
+GPA: 3.80</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+# <u>Experience</u>
+
+<br>
+
+### Research Assistant — Lewis & Clark College
+**Portland, OR | Sept 2024 – Sept 2025**
+
+Promoted from the Rogers Fellowship program to continue research design and
+execution. Took leadership of new research aides — creating reference
+documentation, becoming the primary point of contact for questions, overseeing
+design implementation, and compiling team results.
+
+- Recruited participants and conducted 100+ experimental procedure sessions
+- Independently built a data collection, organization, and storage system using
+  Qualtrics and connected Google platforms, ensuring zero data loss
+- Sole research assistant on data cleaning and analysis (Google Sheets, Excel,
+  SPSS, R) to prepare findings for academic and emergency-preparedness conferences
+- Represented the project at OMSI After Dark, guiding 500+ attendees through a
+  simplified version of the study protocol
+  ([cascadia9game.org](https://www.cascadia9game.org/))
+
+<br>
+
+### Data Analyst — Growing Gardens, Lewis & Clark College
+**Portland, OR | Jan – May 2025**
+
+Worked in a small team on analysis tied to Growing Gardens' school program, a
+local Portland nonprofit serving 10 schools in food-security events.
+
+- Used R for data cleaning, aggregation, analysis, and visualization
+- Developed survey materials in Google Forms with formal documentation of
+  organization and storage
+- Produced a report of preliminary results and recommendations to lessen data
+  collection burden on volunteer teachers while preserving future data validity
+- Work featured in an OPB radio segment and article, extending the project's
+  visibility beyond the college
+
+<br>
+
+### Student Data Science Assistant — Lewis & Clark College
+**Portland, OR | Sept 2024 – May 2025**
+
+- Supported 30+ students per term as TA for introductory data science courses,
+  resolving in-lecture technical issues and grading assignments
+- Staffed the campus "Data Cafe" as an R and data-sourcing specialist
+- Improved student outcomes through office hours, 1:1 tutoring, and
+  cross-department faculty referrals
+
+<br>
+
+### Rogers Fellowship Research — Lewis & Clark College
+**Portland, OR | May – Aug 2024**
+
+- Designed and executed Phase III of an NSF-funded (#1917148) interdisciplinary
+  study on video games for adolescent disaster preparedness
+- Conducted a literature review and formal experimental proposal building
+  directly on prior study limitations
+- Personally recovered and re-analyzed a backlog of unused footage/data by
+  building a new annotation and storage system, salvaging results from 100+
+  experimental sessions
+- Coordinated with participant pools, fellow research aides, and PIs to refine
+  game materials for testing
+- Conducted statistical analysis across experiments (Google Sheets, Excel, SPSS,
+  R) to guide future experiment design
+- Documented and presented research in a formal paper and academic presentation
+
+<br>
+
+### Data Analyst — US Fish & Wildlife Service, Lewis & Clark College
+**Portland, OR | Jan – May 2024**
+
+- Built a species distribution assessment predicting future habitable range for
+  the fisher (*Pekania pennanti*) under shifting climate conditions
+- Used R and GitHub for a full data pipeline: cleaning, aggregation, analysis,
+  and visualization
+- Produced a paper and presentation for conservation stakeholders at the US Fish
+  & Wildlife Service ([zenodo.org/records/11051172](https://zenodo.org/records/11051172))
+
+---
+<br><br>
+
+## <u>Education</u>
+
+<br>
+
+### Master of Science, Data Science
+**Willamette University | Portland, OR**
+August 2026 — GPA: 4.0
+
+<br>
+
+### Bachelor of Arts, Psychology
+#### Minor: Data Science
+**Lewis & Clark College | Portland, OR**
+May 2025 — GPA: 3.80

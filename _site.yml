@@ -1,0 +1,15 @@
+name: "margaret-giardello-portfolio"
+title: "Margaret Giardello"
+output_dir: "docs"
+navbar:
+  title: "Margaret Giardello"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Experience"
+      href: experience.html
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
+    toc: false

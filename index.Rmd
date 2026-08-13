@@ -1,0 +1,114 @@
+---
+title: "Margaret Giardello"
+description: "Data Scientist | Portland, OR"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+::::: columns
+::: {.column width="40%"}
+![](files/headhshot.jpg)
+
+### Contact Information
+
+Email: [margaretgiardello\@gmail.com](mailto:margaretgiardello@gmail.com)
+
+Linkedin: [linkedin.com/in/margaret-giardello](https://linkedin.com/in/margaret-giardello)
+
+Resume: <a href="files/resume.pdf" target="_blank">Download my resume (PDF)</a>
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="50%"}
+
+## Hi, I'm Maggie!
+<div style="font-size: 1.2em;">
+I'm a data scientist finishing my Master's degree, with research
+experience spanning experimental design, statistical analysis, data
+engineering, and visualization in R, Python, and SQL. I like taking messy, multi-source data and turning it into findings
+people can actually understand and use.
+
+I'm passionate about data communication and using data to understand the world and people who live in it. Data is often inaccessible or unapproachable but it doesn't have to be! I believe data is useful in all circumstances and communication is its key to success. 
+</div>
+
+<br><br>
+
+### Technical Skills
+
+R · Python · SQL · Shiny Applications · Grafana Dashboarding · Data
+Engineering · Data Visualization · GitHub Integration · Statistical
+Analysis · Machine Learning · API Integration · Research Design ·
+Qualtrics · Technical Writing · B1 Spanish
+:::
+:::::
+<br><br>
+
+# <u>Projects</u>
+
+<br>
+
+## Media Indicators of Misinformation
+**Python, R, SQL, GitHub, Machine Learning | May 2026 – present**
+
+Capstone pipeline aggregating article-level text analysis across global news
+sources as predictors of country-year misinformation campaigns.
+
+- Engineered a layered SQL view over the GDELT database in Google BigQuery,
+  compressing 2.6TB of raw data down to roughly 3,000 rows for aggregated analysis
+- Cleaned, filtered, joined, and transformed data across R, Python, and SQL
+- Applied Random Forest modeling, PCA, and clustering for dimensionality reduction
+- Currently developing a multivariate time series model to predict the presence of
+  domestic misinformation campaigns on a global scale
+- Reporting results via technical paper and conference poster
+
+[Read Our Report](https://wu-msds-capstones.github.io/project-writeup-maggie-elliana/)
+
+---
+
+## Prague Metro System
+**SQL, Grafana, dbt | May 2026 – present, 3-person team**
+
+Dimensional models built on synthetic transit data drawn from a variety of source
+structures, representing metro system usage patterns to enable theoretical transit
+design tailored to rider movement.
+
+- Engineered Python DAGs for ingestion, dbt/SQL for modeling, and Postgres for
+  storage
+- Delivered biweekly Grafana dashboards tailored to specific business questions
+
+
+---
+
+## Portland Lighting & Crime
+**R, Shiny, Statistical Analysis, Data Visualization | Jan – May 2026**
+
+Analysis of 2025 Portland crime and streetlight data testing whether artificial
+lighting deters targeted crime categories relevant to pedestrians traveling at
+night.
+
+- Cleaned, spatially joined, and transformed disparate open-data sources in R
+- Ran density analysis and chi-square testing, supporting the working theory while
+  calling for more tailored future analysis
+- Built an interactive Shiny app letting users explore results by neighborhood and
+  crime type
+
+[Launch the Shiny app](https://maggie-g-willamette.shinyapps.io/502Final/)
+
+---
+
+## Yelp Cuisines
+**Yelp API, PostgreSQL, Railway, Grafana | Jan – May 2026**
+
+Comparison of restaurant and cuisine patterns across six major US cities to
+surface consumer behavior insights.
+
+- Built a data pipeline from the Yelp Business API through Railway into Postgres,
+  visualized in Grafana
+- Found preliminary results of higher food ratings and lower costs along West
+  Coast cities
+
+---
