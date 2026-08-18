@@ -1,3 +1,8 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 # <u>Experience</u>
 
@@ -77,7 +82,8 @@ local Portland nonprofit serving 10 schools in food-security events.
 - Produced a paper and presentation for conservation stakeholders at the US Fish
   & Wildlife Service ([zenodo.org/records/11051172](https://zenodo.org/records/11051172))
 
----
+<hr>
+
 <br><br>
 
 ## <u>Education</u>
