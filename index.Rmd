@@ -148,3 +148,4 @@ compared to the other cities studied.
 <img src="files/yelp_dashboard.png" width="600">
 
 <hr>
+
